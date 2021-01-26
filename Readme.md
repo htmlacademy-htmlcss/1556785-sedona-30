@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Jakhongir Abdurakhmanov](https://up.htmlacademy.ru/htmlcss/30/user/1556785).
-* Наставник: [Шамиль Асланов].
+* Наставник: [Шамиль Асланов](https://htmlacademy.ru/profile/exephs).
 
 ---
 
