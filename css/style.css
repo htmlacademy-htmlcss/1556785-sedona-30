@@ -1,3 +1,19 @@
 body {
-	margin: 0;
+
+	font-family: 'PT Sans', sans-serif;
+	
+	text-transform: uppercase;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+
+li {
+	display: flex;
+	font-size: 14px;
+	list-style: none;
 }
