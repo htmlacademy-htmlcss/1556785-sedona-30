@@ -21,75 +21,70 @@
 
 	<main>
 		<section>
+			<h2>Фильтр</h2>
 			<form method="get" action="https://echo.htmlacademy.ru">
 				<fieldset>
 					<legend>Инфраструктура:</legend>
-				  	<ul>
-						<li>
-					  		<input type="checkbox" name="" checked>
-					  		<label for="">Бассейн</label>
-						</li>
-						<li>
-					  		<input type="checkbox" name="">
-					  		<label for="">Парковка</label>
-						</li>
-						<li>
-					  		<input type="checkbox" name="">
-					  		<label for="">Wi-Fi</label>
-						</li>
-				  	<ul>
+						<p>  
+							<input type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
+					  		<label for="swimming-pool">Бассейн</label>
+						</p>
+						<p>
+							<input type="checkbox" name="parking" id="filter-parking">
+							<label for="parking">Парковка</label>
+						</p>
+						<p>	  
+							<input type="checkbox" name="wi-fi" id="filter-wi-fi">
+							<label for="wi-fi">Wi-Fi</label>
+						</p>	  
 				</fieldset>
 				<fieldset>
 					<legend>Тип жилья:</legend>
-				  	<ul>
-						<li>
-					 		<input type="checkbox" name="" checked>
-					  		<label for="">Гостиница</label>
-						</li>
-						<li>
-					  		<input type="checkbox" name="" checked>
-					  		<label for="">Мотель</label>
-						</li>
-						<li>
-					  		<input type="checkbox" name="" checked>
-					  		<label for="">Апартаменты</label>
-						</li>
-				  	<ul>
+						<p>
+					 		<input type="checkbox" name="hotel" id="filter-hotel" checked>
+							<label for="hotel">Гостиница</label>
+						</p>	
+						<p>	
+					  		<input type="checkbox" name="motel" id="filter-motel" checked>
+							<label for="motel">Мотель</label>
+						</p>	
+						<p>	
+					  		<input type="checkbox" name="apartments" id="filter-apartments" checked>
+							<label for="apartments">Апартаменты</label>
+						</p>	  
 				</fieldset>
 				<fieldset>
 					<legend>Стоимость в сутки (Р):</legend>
-				  	<ul>
-						<li>
-					 		<input type="" name="">
-					  		<label for="">От 0</label>
-						</li>
-						<li>
-					  		<input type="" name="">
-					  		<label for="">До 3000</label>
-						</li>
+						<p>
+					 		<input type="checkbox" name="min-cost" id="filter-min-cost">
+					  		<label for="min-cost">От 0</label>
+						</p>
+						<p>
+					  		<input type="checkbox" name="max-cost" id="filter-max-cost">
+					  		<label for="max-cost">До 3000</label>
+						</p>
 						<button type="submit">Найти</button>
-				  	<ul>
 				</fieldset>
 			</form>	
 		</section>
 		
 		<section>
-			<h3>Найдено: 3</h3>
+			<p>Найдено: 3</p>
 			<ul>
-				<li>
-					<ul>
-						<li>Сортировка:</li>
-						<li>По цене</li>
-						<li>По типу</li>
-						<li>По рейтингу</li>
-					</ul>
-				</li>
+				<li>Сортировка:</li>
+				<li>По цене</li>
+				<li>По типу</li>
+				<li>По рейтингу</li>
+				<li>По убыванию</li>
+				<li>по возрастанию</li>
+			</ul>
+			<ul>	
 				<li>
 					<h3>Amara Resort & Spa</h3>
 					<p>Гостиница</p>
 					<p>От 4000 Р.</p>
-					<button type="submit">Подробнее</button>
-					<button type="submit">Забронировать</button>
+					<a href="#">Подробнее</a>
+					<a href="#">Забронировать</a>
 					<img src="https://via.placeholder.com/135x90" width="135" height="90" alt="">	
 					<p>Рейтинг: 8,5</p>
 				</li>
@@ -97,8 +92,8 @@
 					<h3>Desert Quail Inn</h3>
 					<p>Мотель</p>
 					<p>От 3000 Р.</p>
-					<button type="submit">Подробнее</button>
-					<button type="submit">Забронировать</button>
+					<a href="#">Подробнее</a>
+					<a href="#">Забронировать</a>
 					<img src="https://via.placeholder.com/135x90" width="135" height="90" alt="">	
 					<p>Рейтинг: 8,9</p>
 				</li>
@@ -106,8 +101,8 @@
 					<h3>Villas at Poco Diablo</h3>
 					<p>Апартаменты</p>
 					<p>От 2000 Р.</p>
-					<button type="submit">Подробнее</button>
-					<button type="submit">Забронировать</button>
+					<a href="#">Подробнее</a>
+					<a href="#">Забронировать</a>
 					<img src="https://via.placeholder.com/135x90" width="135" height="90" alt="">	
 					<p>Рейтинг: 9,2</p>
 				</li>
@@ -118,7 +113,7 @@
 
 	<footer>
 		<div>
-			<h3>#visitSEDONA</h3>
+			<p>#visitSEDONA</p>
 			<p>Тел:<a href="tel:+74956660166">+7(495) 666-01-66</a></p>
 		</div>
 		<ul>
