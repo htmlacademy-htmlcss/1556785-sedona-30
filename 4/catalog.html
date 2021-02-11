@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML Academy: Седона</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <base href="https://htmlacademy-htmlcss.github.io/1556785-sedona-30/4/">
+</head>
+<body class="page-body">
+	<header class="main-header">	
+		<nav class="main-navigation">
+			<a><img src="img/logo.svg" width="138" height="70" alt="Sedona"></a>		
+			<ul>
+				<li><a href="#">Информация</a></li>
+				<li><a href="#">Фото и видео</a></li>
+				<li><a href="#">Карта штата</a></li>
+				<li><a href="#">Гостиницы</a></li>
+			</ul>
+		</nav>
+		<img src="https://via.placeholder.com/1200x217"  width="1200" height="217" alt="Sedona">
+	</header>	
+    
+	<main>
+		<section>
+			<h2>Фильтр</h2>
+			<form method="get" action="https://echo.htmlacademy.ru">
+				<fieldset>
+					<legend>Инфраструктура:</legend>
+						<p>  
+							<input type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
+					  		<label for="swimming-pool">Бассейн</label>
+						</p>
+						<p>
+							<input type="checkbox" name="parking" id="filter-parking">
+							<label for="parking">Парковка</label>
+						</p>
+						<p>	  
+							<input type="checkbox" name="wi-fi" id="filter-wi-fi">
+							<label for="wi-fi">Wi-Fi</label>
+						</p>	  
+				</fieldset>
+				<fieldset>
+					<legend>Тип жилья:</legend>
+						<p>
+					 		<input type="checkbox" name="hotel" id="filter-hotel" checked>
+							<label for="hotel">Гостиница</label>
+						</p>	
+						<p>	
+					  		<input type="checkbox" name="motel" id="filter-motel" checked>
+							<label for="motel">Мотель</label>
+						</p>	
+						<p>	
+					  		<input type="checkbox" name="apartments" id="filter-apartments" checked>
+							<label for="apartments">Апартаменты</label>
+						</p>	  
+				</fieldset>
+				<fieldset>
+					<legend>Стоимость в сутки (Р):</legend>
+						<p>
+					 		<input type="checkbox" name="min-cost" id="filter-min-cost">
+					  		<label for="min-cost">От 0</label>
+						</p>
+						<p>
+					  		<input type="checkbox" name="max-cost" id="filter-max-cost">
+					  		<label for="max-cost">До 3000</label>
+						</p>
+						<button type="submit">Найти</button>
+				</fieldset>
+			</form>	
+		</section>
+		
+		<section>
+			<p>Найдено: 3</p>
+			<ul>
+				<li>Сортировка:</li>
+				<li>По цене</li>
+				<li>По типу</li>
+				<li>По рейтингу</li>
+				<li>По убыванию</li>
+				<li>по возрастанию</li>
+			</ul>
+			<ul>	
+				<li>
+					<h3>Amara Resort & Spa</h3>
+					<p>Гостиница</p>
+					<p>От 4000 Р.</p>
+					<a href="#">Подробнее</a>
+					<a href="#">Забронировать</a>
+					<img src="img/Layer 21.jpg" width="135" height="90" alt="hotel">	
+					<p>Рейтинг: 8,5</p>
+				</li>
+				<li>
+					<h3>Desert Quail Inn</h3>
+					<p>Мотель</p>
+					<p>От 3000 Р.</p>
+					<a href="#">Подробнее</a>
+					<a href="#">Забронировать</a>
+					<img src="img/Layer 89.jpg" width="135" height="90" alt="motel">	
+					<p>Рейтинг: 8,9</p>
+				</li>
+				<li>
+					<h3>Villas at Poco Diablo</h3>
+					<p>Апартаменты</p>
+					<p>От 2000 Р.</p>
+					<a href="#">Подробнее</a>
+					<a href="#">Забронировать</a>
+					<img src="img/Rectangle.jpg" width="135" height="90" alt="apartments">	
+					<p>Рейтинг: 9,2</p>
+				</li>
+			</ul>
+		</section>
+	
+	</main>
+
+	<footer class="main-footer">
+		<div class="footer-contacts">
+			<p>#visitSEDONA</p>
+			<p>Тел:<a href="tel:+74956660166">+7(495) 666-01-66</a></p>
+		</div>
+		<ul class="footer-social">
+			<li>
+				<a href="#"><img src="img/twitter.svg" width="46" height="46" alt="twitter"></a>
+			</li>
+			<li>
+				<a href="#"><img src="img/fb.svg" width="46" height="46" alt="fb"></a>
+			</li>
+			<li>
+				<a href="#"><img src="img/youtube.svg" width="46" height="46" alt="youtube"></a>
+			</li>
+		</ul>
+		<div clss="footer-copyright">
+			<p>Website by</p>
+			<a><img src="img/logo-htmlacademy.svg" width="114" height="40" alt="htmlacademy"></a>
+		</div>	
+	</footer>
+</body>
+</html>
