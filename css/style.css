@@ -1,26 +1,76 @@
 /* Variables */
 
 :root {
-    --basic-black: #000000;
-    --basic-white: #ffffff;  
-    --basic-light-blue: #81B3D2;
-    --basic-extra-blue: #669EC0;
-    --basic-blue:#5496BD;
-    --basic-extra-dark: #333333;
-    --basic-brown: #503E33;
-    --basic-extra-brown: #604E43;
-    --basic-light-brown: #766357;
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+  --basic-light-blue: #81B3D2;
+  --basic-extra-blue: #669EC0;
+  --basic-blue:#5496BD;
+  --basic-extra-dark: #333333;
+  --basic-brown: #503E33;
+  --basic-extra-brown: #604E43;
+  --basic-light-brown: #766357;
+  --basic-gray: #eeeeee;
 
-    --special: #888888;
+  --special: #888888;
 
 }
 
 /* Global */
 
 body {
-    padding: 0;
-    font-family: 'PT Sans', sans-serif;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 26px;
 
-    min-width: 1200px;
+  /*min-width: 1200px;*/
+  background-image: url("../img/bg-main.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main navigation */
+
+.site-navigation {
+  font-weight: bold;
+
+
+  list-style: none;
+}
+
+.site-navigation a {
+  color: var(--basic-black);
+
+}
+
+.city {
+  font-weight: bold;
+  font-size: 21px;
+
+}
+
+.reasons {
+  color: var(--basic-extra-dark);
+}
+
+.footer-contacts {
+  font-size: 21px;
+
+}
+
+.footer-social {
+  color: var(--basic-white);
 
 }
