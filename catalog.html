@@ -11,26 +11,25 @@
 	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="page-body">
-	<header class="main-header">	
+	<header class="main-header">
 		<nav class="main-navigation">
-			<a><img src="img/logo.svg" width="138" height="70" alt="Sedona"></a>		
-			<ul>
+			<a><img src="img/logo.svg" width="138" height="70" alt="Sedona"></a>
+			<ul class="site-navigation">
 				<li><a href="#">Информация</a></li>
 				<li><a href="#">Фото и видео</a></li>
 				<li><a href="#">Карта штата</a></li>
 				<li><a href="#">Гостиницы</a></li>
 			</ul>
 		</nav>
-		<img src="https://via.placeholder.com/1200x217"  width="1200" height="217" alt="Sedona">
-	</header>	
-    
-	<main>
+	</header>
+
+	<main class="page-catalog">
 		<section>
 			<h2>Фильтр</h2>
 			<form method="get" action="https://echo.htmlacademy.ru">
 				<fieldset>
 					<legend>Инфраструктура:</legend>
-						<p>  
+						<p>
 							<input type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
 					  		<label for="swimming-pool">Бассейн</label>
 						</p>
@@ -38,25 +37,25 @@
 							<input type="checkbox" name="parking" id="filter-parking">
 							<label for="parking">Парковка</label>
 						</p>
-						<p>	  
+						<p>
 							<input type="checkbox" name="wi-fi" id="filter-wi-fi">
 							<label for="wi-fi">Wi-Fi</label>
-						</p>	  
+						</p>
 				</fieldset>
 				<fieldset>
 					<legend>Тип жилья:</legend>
 						<p>
 					 		<input type="checkbox" name="hotel" id="filter-hotel" checked>
 							<label for="hotel">Гостиница</label>
-						</p>	
-						<p>	
+						</p>
+						<p>
 					  		<input type="checkbox" name="motel" id="filter-motel" checked>
 							<label for="motel">Мотель</label>
-						</p>	
-						<p>	
+						</p>
+						<p>
 					  		<input type="checkbox" name="apartments" id="filter-apartments" checked>
 							<label for="apartments">Апартаменты</label>
-						</p>	  
+						</p>
 				</fieldset>
 				<fieldset>
 					<legend>Стоимость в сутки (Р):</legend>
@@ -70,9 +69,9 @@
 						</p>
 						<button type="submit">Найти</button>
 				</fieldset>
-			</form>	
+			</form>
 		</section>
-		
+
 		<section>
 			<p>Найдено: 3</p>
 			<ul>
@@ -83,14 +82,14 @@
 				<li>По убыванию</li>
 				<li>по возрастанию</li>
 			</ul>
-			<ul>	
+			<ul>
 				<li>
 					<h3>Amara Resort & Spa</h3>
 					<p>Гостиница</p>
 					<p>От 4000 Р.</p>
 					<a href="#">Подробнее</a>
 					<a href="#">Забронировать</a>
-					<img src="img/Layer 21.jpg" width="135" height="90" alt="hotel">	
+					<img src="img/Layer 21.jpg" width="135" height="90" alt="hotel">
 					<p>Рейтинг: 8,5</p>
 				</li>
 				<li>
@@ -99,7 +98,7 @@
 					<p>От 3000 Р.</p>
 					<a href="#">Подробнее</a>
 					<a href="#">Забронировать</a>
-					<img src="img/Layer 89.jpg" width="135" height="90" alt="motel">	
+					<img src="img/Layer 89.jpg" width="135" height="90" alt="motel">
 					<p>Рейтинг: 8,9</p>
 				</li>
 				<li>
@@ -108,12 +107,12 @@
 					<p>От 2000 Р.</p>
 					<a href="#">Подробнее</a>
 					<a href="#">Забронировать</a>
-					<img src="img/Rectangle.jpg" width="135" height="90" alt="apartments">	
+					<img src="img/Rectangle.jpg" width="135" height="90" alt="apartments">
 					<p>Рейтинг: 9,2</p>
 				</li>
 			</ul>
 		</section>
-	
+
 	</main>
 
 	<footer class="main-footer">
@@ -135,7 +134,7 @@
 		<div clss="footer-copyright">
 			<p>Website by</p>
 			<a><img src="img/logo-htmlacademy.svg" width="114" height="40" alt="htmlacademy"></a>
-		</div>	
+		</div>
 	</footer>
 </body>
 </html>

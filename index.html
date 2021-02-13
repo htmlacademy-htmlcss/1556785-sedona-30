@@ -21,14 +21,11 @@
 				<li><a href="catalog.html">Гостиницы</a></li>
 			</ul>
 		</nav>
-		<!--<img src="
-    https://via.placeholder.com/1200x509" width="1200" height="509" alt="mountains of Sedona">-->
-
 	</header>
 	<main class="container">
-		<div class="inner-logo">
-        	<img src="img/welcome.svg" width="458" height="352" alt="Welcome to Sedona">
-        </div>
+		<div class="header-hero">
+        <img src="img/welcome.svg" width="458" height="352" alt="Welcome to Sedona">
+    </div>
 		<section class="features">
 			<h2>Преимущества</h2>
 			<p class="city">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</p>
@@ -39,7 +36,7 @@
 					<p>№1</p>
 					<p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
 					<img src="img/image1.jpg" width="800" height="256" alt="Town">
-					<ul>
+					<ul class="feature-item-1">
 						<li>
 							<img src="https://via.placeholder.com/75x72" width="75" height="72" alt="icon house">
 							<h3>Жильё</h3>
@@ -52,57 +49,61 @@
 						</li>
 						<li>
 							<img src="https://via.placeholder.com/75x72" width="75" height="72" alt="icon souvenir">
-							<p>Сувениры</p>
+							<h3>Сувениры</h3>
 							<p>Не только китайского, но и местного производства!</p>
 						</li>
 					</ul>
 				</li>
-				<li class="feature-item">
+				<li class="feature-item-2">
 					<h3>Там есть Мост дьявола</h3>
 					<p>№2</p>
 					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 					<img src="img/image2.jpg" width="800" height="256" alt="devil's bridge">
 				</li>
-				<li class="feature-item">
-					<h3>Небольшая площадь</h3>
-					<p>№3</p>
-					<p>все достопримечательности находятся очень близко</p>
-				</li>
-				<li class="feature-item">
-					<h3>Красивая дорога</h3>
-					<p>№4</p>
-					<p>ехать в седону из лас-вегаса совсем не скучно!</p>
-				</li>
-				<li class="feature-item">
-					<h3>Мало туристов</h3>
-					<p>№5</p>
-					<p>большинство едет в гранд каньон и толпится там</p>
-				</li>
+				<li class="feature-item-3">
+          <ul>
+            <li>
+					    <h3>Небольшая площадь</h3>
+					    <p>№3</p>
+					    <p>все достопримечательности находятся очень близко</p>
+				    </li>
+				    <li>
+					    <h3>Красивая дорога</h3>
+					    <p>№4</p>
+					    <p>ехать в седону из лас-вегаса совсем не скучно!</p>
+				    </li>
+				    <li>
+					    <h3>Мало туристов</h3>
+					    <p>№5</p>
+					    <p>большинство едет в гранд каньон и толпится там</p>
+				    </li>
+          </ul>
+        </li>
 			</ol>
 		</section>
 
 		<section class="appointment">
 			<h2>Заинтересовались?</h2>
-			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+			<p class="appointment-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
 			<h3>Поиск Гостиницы в Седоне</h3>
-			<form action="#" method="post" >
-				<p>
-					<label>Дата заезда:</label>
-					<input type="text" name="date" placeholder="24 апреля 2017">
+			<form class="appointment-form" action="#" method="post">
+				<p class="appointment-item">
+					<label for="arrival-date">Дата заезда:</label>
+					<input id="arrival-date" type="text" name="date" placeholder="24 апреля 2017">
 				</p>
-				<p>
-					<label>Дата выезда:</label>
-					<input type="text" name="date" placeholder="24 апреля 2017">
+				<p class="appointment-item">
+					<label for="departure-date">Дата выезда:</label>
+					<input id="departure-date" type="text" name="date" placeholder="24 апреля 2017">
 				</p>
-				<p>
-					<label>Взрослые:</label>
-					<input type="text" name="date">
+				<p class="appointment-item">
+					<label for="adults">Взрослые:</label>
+					<input id="adults" type="text" name="date">
 				</p>
-				<p>
-					<label>Дети:</label>
-					<input type="text" name="date">
+				<p class="appointment-item">
+					<label for="children" >Дети:</label>
+					<input id="children" type="text" name="date">
 				</p>
-				<button type="submit">Найти</button>
+				<button class="button" type="submit">Найти</button>
 			</form>
 			<figure>
 				<a href="#">
@@ -115,7 +116,7 @@
 	<footer class="main-footer">
 		<div class="footer-contacts">
 			<p>#visitSEDONA</p>
-			<p>Тел:<a href="tel:+74956660166">+7(495) 666-01-66</a></p>
+			<p>Тел:<a href="tel:+74956660166"> +7(495) 666-01-66</a></p>
 		</div>
 		<ul class="footer-social">
 			<li>
@@ -128,9 +129,9 @@
 				<a href="#"><img src="img/youtube.svg" width="46" height="46" alt="youtube"></a>
 			</li>
 		</ul>
-		<div clss="footer-copyright">
+		<div class="footer-copyright">
 			<p>Website by</p>
-			<a><img src="img/logo-htmlacademy.svg" width="114" height="40" alt="htmlacademy"></a>
+			<a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" ><img src="img/logo-htmlacademy.svg" width="114" height="40" alt="htmlacademy"></a>
 		</div>
 	</footer>
 </body>
