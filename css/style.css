@@ -174,7 +174,7 @@ h3 {
 
 .button:focus {
   background-color: var(--basic-blue);
-  color: rgba(var(--basic-white-rgba)), 0.3);
+  color: rgba(var(--basic-white-rgba), 0.3);
 }
 
 /* main-footer */
@@ -210,4 +210,82 @@ h3 {
 .page-catalog {
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
+}
+
+.filter fieldset {
+  border: none;
+  color: var(--basic-white);
+}
+
+.filter legend {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.filter-button {
+  border: 2px solid var(--basic-white);
+  color: var(--basic-white);
+  width: 137px;
+  height: 36px;
+}
+
+.places ul {
+  list-style: none;
+}
+
+.info-cost {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--basic-light-blue);
+}
+
+.info-type {
+  font-size: 12px;
+  line-height: 18px;
+  border: 1px dashed var(--basic-light-blue);
+  opacity: 0.3;
+}
+
+.place-info {
+  color: var(--basic-white);
+  background-color: var(--basic-light-blue);
+  width: 110px;
+  height: 27px;
+}
+
+.place-info a {
+  font-weight: bold;
+}
+
+.place-info a:hover {
+  background-color: var(--basic-extra-blue);
+}
+
+.place-info a:focus {
+  background-color: var(--basic-blue);
+  color: rgba(var(--basic-white-rgba), 0.3);
+}
+
+.order-button {
+  color: var(--basic-white);
+  background-color: var(--basic-light-brown);
+  width: 142px;
+  height: 27px;
+  border: none;
+  text-transform: uppercase;
+}
+
+.order-button:hover {
+  background-color: var(--basic-extra-brown);
+}
+
+.order-button:focus {
+  background-color: var(--basic-brown);
+  color: rgba(var(--basic-white-rgba), 0.3);
+}
+
+.rating {
+  width: 110px;
+  height: 27px;
+  background-color: var(--basic-light-gray);
 }
