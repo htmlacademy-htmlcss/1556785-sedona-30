@@ -3,6 +3,7 @@
 :root {
   --basic-black: #000000;
   --basic-white: #ffffff;
+  --basic-white-rgba: 255, 255, 255;
   --basic-light-blue: #81B3D2;
   --basic-extra-blue: #669EC0;
   --basic-blue:#5496BD;
@@ -12,16 +13,14 @@
   --basic-light-brown: #766357;
   --basic-gray: #eeeeee;
   --basic-light-gray: #f2f2f2;
-
   --special: #888888;
-
 }
 
 /* Global */
 
 body {
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 21px;
@@ -73,6 +72,7 @@ h3 {
 .header-hero {
   background-image: url("../img/bg-main.jpg");
   background-repeat: no-repeat;
+  background-color: var(--basic-light-blue);
 }
 
 .city {
@@ -120,14 +120,12 @@ h3 {
   text-align: center;
 }
 
-
 .appointment-item input::placeholder {
   background-color: var(--bacis-light-gray);
   color: var(--basic-black);
   line-height: 26px;
   font-weight: bold;
 }
-
 
 .appointment h3 {
   line-height: 26px;
@@ -176,7 +174,7 @@ h3 {
 
 .button:focus {
   background-color: var(--basic-blue);
-  color: rgba(255, 255, 255, 0.3)
+  color: rgba(var(--basic-white-rgba)), 0.3);
 }
 
 /* main-footer */
@@ -191,7 +189,6 @@ h3 {
 .footer-contacts a {
   color: var(--basic-black);
 }
-
 
 .footer-social {
   color: var(--basic-white);

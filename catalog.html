@@ -24,14 +24,14 @@
 	</header>
 
 	<main class="page-catalog">
-		<section>
+		<section class="filters">
 			<h2>Фильтр</h2>
-			<form method="get" action="https://echo.htmlacademy.ru">
+			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 				<fieldset>
 					<legend>Инфраструктура:</legend>
 						<p>
 							<input type="checkbox" name="swimming-pool" id="filter-swimming-pool" checked>
-					  		<label for="swimming-pool">Бассейн</label>
+					  	<label for="swimming-pool">Бассейн</label>
 						</p>
 						<p>
 							<input type="checkbox" name="parking" id="filter-parking">
@@ -76,11 +76,21 @@
 			<p>Найдено: 3</p>
 			<ul>
 				<li>Сортировка:</li>
-				<li>По цене</li>
-				<li>По типу</li>
-				<li>По рейтингу</li>
-				<li>По убыванию</li>
-				<li>по возрастанию</li>
+				<li>
+          <a href="#">По цене</a>
+        </li>
+				<li>
+          <a href="#">По типу</a>
+        </li>
+				<li>
+          <a href="#">По рейтингу</a>
+        </li>
+				<li>
+          <a href="#">По убыванию</a>
+        </li>
+				<li>
+          <a href="#">по возрастанию</a>
+        </li>
 			</ul>
 			<ul>
 				<li>
@@ -88,7 +98,7 @@
 					<p>Гостиница</p>
 					<p>От 4000 Р.</p>
 					<a href="#">Подробнее</a>
-					<a href="#">Забронировать</a>
+					<button class="button" type="button">Забронировать</button>
 					<img src="img/Layer 21.jpg" width="135" height="90" alt="hotel">
 					<p>Рейтинг: 8,5</p>
 				</li>
@@ -97,7 +107,7 @@
 					<p>Мотель</p>
 					<p>От 3000 Р.</p>
 					<a href="#">Подробнее</a>
-					<a href="#">Забронировать</a>
+					<button class="button" type="button">Забронировать</button>
 					<img src="img/Layer 89.jpg" width="135" height="90" alt="motel">
 					<p>Рейтинг: 8,9</p>
 				</li>
@@ -106,7 +116,7 @@
 					<p>Апартаменты</p>
 					<p>От 2000 Р.</p>
 					<a href="#">Подробнее</a>
-					<a href="#">Забронировать</a>
+					<button class="button" type="button">Забронировать</button>
 					<img src="img/Rectangle.jpg" width="135" height="90" alt="apartments">
 					<p>Рейтинг: 9,2</p>
 				</li>
@@ -118,7 +128,7 @@
 	<footer class="main-footer">
 		<div class="footer-contacts">
 			<p>#visitSEDONA</p>
-			<p>Тел:<a href="tel:+74956660166">+7(495) 666-01-66</a></p>
+			<p>Тел:<a href="tel:+74956660166"> +7(495) 666-01-66</a></p>
 		</div>
 		<ul class="footer-social">
 			<li>
@@ -131,9 +141,9 @@
 				<a href="#"><img src="img/youtube.svg" width="46" height="46" alt="youtube"></a>
 			</li>
 		</ul>
-		<div clss="footer-copyright">
+		<div class="footer-copyright">
 			<p>Website by</p>
-			<a><img src="img/logo-htmlacademy.svg" width="114" height="40" alt="htmlacademy"></a>
+			<a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" ><img src="img/logo-htmlacademy.svg" width="114" height="40" alt="htmlacademy"></a>
 		</div>
 	</footer>
 </body>
