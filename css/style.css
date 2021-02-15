@@ -2,6 +2,7 @@
 
 :root {
   --basic-black: #000000;
+  --basic-black-rgba: 0, 0, 0;
   --basic-white: #ffffff;
   --basic-white-rgba: 255, 255, 255;
   --basic-light-blue: #81B3D2;
@@ -13,6 +14,7 @@
   --basic-light-brown: #766357;
   --basic-gray: #eeeeee;
   --basic-light-gray: #f2f2f2;
+  --basic-extra-gray: #666666;
   --special: #888888;
 }
 
@@ -207,9 +209,10 @@ h3 {
   background-color: var(--basic-light-blue);
 }
 
-.page-catalog {
+.filters{
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
+  background-color: var(--basic-light-blue);
 }
 
 .filter fieldset {
@@ -218,7 +221,7 @@ h3 {
 }
 
 .filter legend {
-  font-size: 21px;
+  font-size: 16px;
   font-weight: bold;
 }
 
@@ -227,46 +230,62 @@ h3 {
   color: var(--basic-white);
   width: 137px;
   height: 36px;
+  background-color: transparent;
 }
 
-.places ul {
+.sort ul {
   list-style: none;
 }
 
-.info-cost {
+.sort p {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.sort li {
   font-size: 12px;
   line-height: 18px;
+}
+
+.sort-cost {
   color: var(--basic-light-blue);
 }
 
-.info-type {
-  font-size: 12px;
-  line-height: 18px;
-  border: 1px dashed var(--basic-light-blue);
-  opacity: 0.3;
+.sort-type {
+  border-bottom: 1px dashed var(--basic-light-blue);
+  color: rgba(var(--basic-black-rgba), 0.3);
 }
 
-.place-info {
-  color: var(--basic-white);
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-list h3 {
+  color: var(--basic-black);
+  line-height: 26px;
+}
+
+.catalog-list h3:hover {
+  color: var(--basic-light-blue);
+}
+
+.catalog-list h3:focus {
+  color: rgba(var(--basic-black-rgba), 0.3);
+}
+
+.catalog-item-more  {
   background-color: var(--basic-light-blue);
   width: 110px;
   height: 27px;
 }
 
-.place-info a {
+.catalog-item-more a {
+  color: var(--basic-white);
   font-weight: bold;
 }
 
-.place-info a:hover {
-  background-color: var(--basic-extra-blue);
-}
-
-.place-info a:focus {
-  background-color: var(--basic-blue);
-  color: rgba(var(--basic-white-rgba), 0.3);
-}
-
-.order-button {
+.catalog-item-reserve {
   color: var(--basic-white);
   background-color: var(--basic-light-brown);
   width: 142px;
@@ -275,11 +294,11 @@ h3 {
   text-transform: uppercase;
 }
 
-.order-button:hover {
+.catalog-item-reserve:hover {
   background-color: var(--basic-extra-brown);
 }
 
-.order-button:focus {
+.catalog-item-reserve:focus {
   background-color: var(--basic-brown);
   color: rgba(var(--basic-white-rgba), 0.3);
 }
@@ -288,4 +307,6 @@ h3 {
   width: 110px;
   height: 27px;
   background-color: var(--basic-light-gray);
+  color: var(--basic-extra-gray);
 }
+
