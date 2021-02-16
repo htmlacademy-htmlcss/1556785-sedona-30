@@ -2,6 +2,7 @@
 
 :root {
   --basic-black: #000000;
+  --basic-black-rgba: 0, 0, 0;
   --basic-white: #ffffff;
   --basic-white-rgba: 255, 255, 255;
   --basic-light-blue: #81B3D2;
@@ -13,6 +14,7 @@
   --basic-light-brown: #766357;
   --basic-gray: #eeeeee;
   --basic-light-gray: #f2f2f2;
+  --basic-extra-gray: #666666;
   --special: #888888;
 }
 
@@ -174,7 +176,7 @@ h3 {
 
 .button:focus {
   background-color: var(--basic-blue);
-  color: rgba(var(--basic-white-rgba)), 0.3);
+  color: rgba(var(--basic-white-rgba), 0.3);
 }
 
 /* main-footer */
@@ -207,7 +209,111 @@ h3 {
   background-color: var(--basic-light-blue);
 }
 
-.page-catalog {
+.filters{
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
+  background-color: var(--basic-light-blue);
 }
+
+.filter fieldset {
+  border: none;
+  color: var(--basic-white);
+}
+
+.filter legend {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.filter-button {
+  border: 2px solid var(--basic-white);
+  color: var(--basic-white);
+  width: 137px;
+  height: 36px;
+  background-color: transparent;
+}
+
+.sort ul {
+  list-style: none;
+}
+
+.sort p {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.sort li {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-cost {
+  color: var(--basic-light-blue);
+}
+
+.sort-type {
+  border-bottom: 1px dashed var(--basic-light-blue);
+  color: rgba(var(--basic-black-rgba), 0.3);
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-list h3 {
+  color: var(--basic-black);
+  line-height: 26px;
+}
+
+.catalog-list h3:hover {
+  color: var(--basic-light-blue);
+}
+
+.catalog-list h3:active {
+  color: rgba(var(--basic-black-rgba), 0.3);
+}
+
+.catalog-item-more  {
+  background-color: var(--basic-light-blue);
+  width: 110px;
+  height: 27px;
+  color: var(--basic-white);
+  font-weight: bold;
+}
+
+.catalog-item-more:hover {
+  background-color: var(--basic-extra-blue);
+}
+
+.catalog-item-more:active {
+  background-color: var(--basic-blue);
+  color: rgba(var(--basic-white-rgba), 0.3);
+}
+
+.catalog-item-reserve {
+  color: var(--basic-white);
+  background-color: var(--basic-light-brown);
+  width: 142px;
+  height: 27px;
+  border: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.catalog-item-reserve:hover {
+  background-color: var(--basic-extra-brown);
+}
+
+.catalog-item-reserve:focus {
+  background-color: var(--basic-brown);
+  color: rgba(var(--basic-white-rgba), 0.3);
+}
+
+.rating {
+  width: 110px;
+  height: 27px;
+  background-color: var(--basic-light-gray);
+  color: var(--basic-extra-gray);
+}
+
