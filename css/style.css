@@ -28,6 +28,10 @@ body {
   line-height: 21px;
   width: 1200px;
   margin: 0 auto;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 a {
@@ -50,11 +54,54 @@ h3 {
   font-weight: bold;
 }
 
+/* Grid */
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+}
+
 /* Main navigation */
 
+.main-navigation {
+  position: relative;
+  padding: 15px 0;
+}
+
+.main-header-logo img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0 auto;
+}
+
 .site-navigation {
-  font-weight: bold;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0;
+  padding: 0;
   list-style: none;
+  font-weight: bold;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+  text-align: right;
+}
+
+.site-navigation li:nth-child(1) {
+  padding-left: 72px;
+}
+
+.site-navigation li:nth-child(4) {
+  padding-right: 72px;
 }
 
 .site-navigation a {
@@ -93,8 +140,14 @@ h3 {
 }
 
 .feature-item {
+  display: grid;
+  grid-template-columns: 400px 1fr;
   color: var(--basic-white);
   background-color: var(--basic-light-blue);
+}
+
+.feature-item div {
+  padding: 47px 51px 54px;
 }
 
 .feature-item-1 {
@@ -102,6 +155,12 @@ h3 {
   color: var(--basic-black);
   font-size: 21px;
   font-weight: bold;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
 }
 
 .feature-item-1 p {
@@ -112,10 +171,19 @@ h3 {
 .feature-item-2 {
   color: var(--basic-white);
   background-color: var(--basic-light-blue);
+  display: grid;
+  grid-template-columns: 1fr 400px;
 }
 
-.feature-item-3 {
+.feature-item-3 ul {
   background-color: var(--basic-gray);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 256px;
+  padding-top: 47px;
 }
 
 .appointment {
@@ -180,6 +248,11 @@ h3 {
 }
 
 /* main-footer */
+
+.main-footer .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 
 .footer-contacts {
   font-size: 21px;
