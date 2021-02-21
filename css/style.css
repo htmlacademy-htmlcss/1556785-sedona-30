@@ -52,6 +52,11 @@ h2 {
 h3 {
   font-size: 21px;
   font-weight: bold;
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }
 
 /* Grid */
@@ -139,51 +144,55 @@ h3 {
   text-align: center;
 }
 
-.feature-item {
+.features-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0;
+  margin: 0;
+}
+
+.feature-item-1 {
   display: grid;
   grid-template-columns: 400px 1fr;
   color: var(--basic-white);
   background-color: var(--basic-light-blue);
+  grid-column: 1/-1;
 }
 
-.feature-item div {
-  padding: 47px 51px 54px;
-}
-
-.feature-item-1 {
+.feature-sublist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column: 1/-1;
   background-color: var(--basic-white);
   color: var(--basic-black);
   font-size: 21px;
   font-weight: bold;
-  display: grid;
-  grid-template-columns: repeat(3, 400px);
   list-style: none;
-  margin: 0;
   padding: 0;
-  font-weight: 400;
 }
 
-.feature-item-1 p {
+.feature-sublist p {
+  font-weight: normal;
   color: var(--basic-extra-dark);
   font-size: 14px;
 }
 
 .feature-item-2 {
-  color: var(--basic-white);
-  background-color: var(--basic-light-blue);
   display: grid;
   grid-template-columns: 1fr 400px;
+  color: var(--basic-white);
+  background-color: var(--basic-light-blue);
+  grid-column: 1/-1;
 }
 
-.feature-item-3 ul {
+.feature-item div {
+  padding: 47px 51px 54px;
+  background-color: var(--basic-light-blue);
+}
+
+.feature-item {
   background-color: var(--basic-gray);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  height: 256px;
-  padding-top: 47px;
 }
 
 .appointment {
@@ -197,21 +206,26 @@ h3 {
   font-weight: bold;
 }
 
-.appointment h3 {
+.appointment-button {
   line-height: 26px;
   color: var(--basic-white);
   background-color: var(--basic-light-brown);
   width: 568px;
   height: 86px;
+  border: none;
+  font-weight: bold;
+  font-size: 21px;
+  text-transform: uppercase;
+  padding: 0;
 }
 
-.appointment h3:hover {
+.appointment-button:hover {
   background-color: var(--basic-extra-brown);
 }
 
-.appointment h3:focus {
+.appointment-button:focus {
   background-color: var(--basic-brown);
-  opacity: 0.3;
+  color: rgba(var(--basic-white-rgba), 0.3);
 }
 
 .appointment-info p {
@@ -268,6 +282,7 @@ h3 {
 .footer-social {
   color: var(--basic-white);
   background-color: var(--basic-light-blue);
+  justify-self: center;
 }
 
 .footer-social:hover{
@@ -276,6 +291,7 @@ h3 {
 
 .footer-copyright {
   line-height: 26px;
+  justify-self: end;
 }
 
 .footer-copyright a:hover {
