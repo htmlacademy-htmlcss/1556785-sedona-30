@@ -310,6 +310,13 @@ p {
   background-color: var(--basic-light-blue);
 }
 
+.container {
+  padding-top: 26.5px;
+  padding-right: 73px;
+  padding-bottom: 31px;
+  padding-left: 72px;
+}
+
 form {
   display: grid;
   grid-template-columns: 200px 200px 1fr;
@@ -318,16 +325,10 @@ form {
 .filter fieldset {
   border: none;
   color: var(--basic-white);
-  padding-left: 72px;
-  padding-top: 26.5;
-  padding-bottom: 31;
 }
 
 .filter fieldset:last-child {
   justify-self: right;
-  padding-right: 73px;
-  padding-bottom: 32px;
-  padding-top: 26.5;
 }
 
 .filter legend {
@@ -341,11 +342,6 @@ form {
   width: 137px;
   height: 36px;
   background-color: transparent;
-}
-
-.sort {
-  display: grid;
-  grid-column: 2/-1;
 }
 
 .sort ul {
