@@ -263,7 +263,7 @@ p {
 
 /* main-footer */
 
-.main-footer .container {
+.main-footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -298,15 +298,37 @@ p {
   background-color: var(--basic-light-blue);
 }
 
+/* Catalog */
+
+.page-catalog {
+  display: grid;
+}
+
 .filters{
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
   background-color: var(--basic-light-blue);
 }
 
+.container {
+  padding-top: 26.5px;
+  padding-right: 73px;
+  padding-bottom: 31px;
+  padding-left: 72px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 200px 200px 1fr;
+}
+
 .filter fieldset {
   border: none;
   color: var(--basic-white);
+}
+
+.filter fieldset:last-child {
+  justify-self: right;
 }
 
 .filter legend {
