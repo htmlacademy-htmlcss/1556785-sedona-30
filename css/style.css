@@ -350,6 +350,14 @@ p {
   background-color: transparent;
 }
 
+.sort-item {
+  display: flex;
+}
+
+.sort-list {
+  display: flex;
+}
+
 .sort ul {
   list-style: none;
 }
@@ -376,6 +384,7 @@ p {
 
 .catalog-list {
   list-style: none;
+  padding-left: 73px;
 }
 
 .catalog-list h3 {
@@ -389,6 +398,10 @@ p {
 
 .catalog-list h3:active {
   color: rgba(var(--basic-black-rgba), 0.3);
+}
+
+.catalog-item {
+  display: flex;
 }
 
 .catalog-item-more  {
