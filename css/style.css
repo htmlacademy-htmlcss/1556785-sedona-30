@@ -127,6 +127,9 @@ p {
   background-image: url("../img/bg-main.jpg");
   background-repeat: no-repeat;
   background-color: var(--basic-light-blue);
+  height: 509px;
+  display: flex;
+  justify-content: center;
 }
 
 .city {
@@ -282,7 +285,9 @@ p {
 .footer-social {
   color: var(--basic-white);
   background-color: var(--basic-light-blue);
+  display: flex;
   justify-self: center;
+  list-style: none;
 }
 
 .footer-social:hover{
@@ -304,20 +309,20 @@ p {
   display: grid;
 }
 
-.filters{
+.filters {
   background-image: url(../img/background.jpg);
   background-repeat: no-repeat;
   background-color: var(--basic-light-blue);
 }
 
-.container {
+.filter-item {
   padding-top: 26.5px;
   padding-right: 73px;
   padding-bottom: 31px;
   padding-left: 72px;
 }
 
-form {
+.filter{
   display: grid;
   grid-template-columns: 200px 200px 1fr;
 }
