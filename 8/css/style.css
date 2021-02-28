@@ -127,7 +127,8 @@ p {
   background-image: url("../img/bg-main.jpg");
   background-repeat: no-repeat;
   background-color: var(--basic-light-blue);
-  height: 509px;
+  background-size: cover;
+  min-height: 509px;
   display: flex;
   justify-content: center;
 }
